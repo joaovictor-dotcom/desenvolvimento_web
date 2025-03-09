@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes  topo {
+    from {
+        margin-top: 60px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 40px;
+        opacity: 1;
+    }
+}
+
+#container {
+    margin: 10px;
+}
+#topo {
+    height: 10em;
+    width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to bottom, #6fbe7f, #246b3d);
+    border-radius: 20px 90px;
+    box-sizing: border-box;
+    padding: 16px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    animation: topo 5s infinite alternate;
+    transition: transform 1s ease-in-out;
+}
+#logo {
+    color: linear-gradient;
+    font-weight: bold;
+    font-size: 3em;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+}
+/* Radial Gradient */
+.radial-gradient {
+    background: radial-gradient(circle, #6fbe7f, #4cae6d, #3a9c5e, #2f794d, #246b3d);
+    }
+#topo:hover {
+        transform: scale(1.1);
+    }
