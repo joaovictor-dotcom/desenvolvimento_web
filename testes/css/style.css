@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     color: #fff;
+    font-family: 'Courier New', Courier, monospace;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -9,11 +10,9 @@ body {
 
 @keyframes  topo {
     from {
-        margin-top: 60px;
         opacity: 0;
     }
     to {
-        margin-top: 40px;
         opacity: 1;
     }
 }
@@ -30,8 +29,6 @@ body {
     display: flexbox;
     justify-content: center;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(to bottom, #6fbe7f, #246b3d);
     border-radius: 20px 90px;
     box-sizing: border-box;
     padding: 16px;
@@ -40,7 +37,6 @@ body {
     transition: transform 1s ease-in-out;
 }
 #logo {
-    color: linear-gradient;
     font-weight: bold;
     font-size: 3em;
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
@@ -48,7 +44,28 @@ body {
 /* Radial Gradient */
 .radial-gradient {
     background: radial-gradient(circle, #6fbe7f, #4cae6d, #3a9c5e, #2f794d, #246b3d);
-    }
+}
+.linear-gradient {
+    background: linear-gradient(to bottom, #6fbe7f, #246b3d);
+}
 #topo:hover {
         transform: scale(1.1);
     }
+.links {
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #6fbe7f, #246b3d);
+    width: 90px;
+    height: 40px;
+    padding: 11px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 1s ease-in-out;
+    margin-left: 10px;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.links:hover {
+    transform: scale(1.1);
+}
