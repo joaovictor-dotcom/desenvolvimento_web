@@ -1,0 +1,125 @@
+/* header */
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 600px;
+    padding-top: 20px;
+}
+/* logo */
+.logo {
+    width: 200px;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    padding: 0 10px 30px 10px ;
+    display: flex;
+}
+.logo h1 {
+    font-size: 1.3em;
+    color: #165199;
+    margin: 10px 0 0 5px;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+/* fim logo */
+/* menu */
+.menu {
+    width: 50%;
+    height: 100%;
+    padding-top: 15px;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #165199;
+}
+.menu a:hover {
+    color: #eeecea;
+    background-color: #165199;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+/* fim menu */
+/* contato */
+.contact {
+    width: 100px;
+    height: 30px;
+    background-color: #165199;
+    border-radius: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #eeecea;
+}
+.contact a {
+    text-decoration: none;
+    color: #eeecea;
+}
+.contact:hover {
+    background-color: #0a3680;
+    color: #eeecea;
+    padding: 5px 10px;
+    height: 40px;
+    border-radius: 10px 0 10px 0;
+}
+
+/* fim contato */
+/* fim header */
+
+/* content */
+.content {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #165199; */
+}
+.impact {
+    width: 400px;
+    height: 400px;
+    padding: 50px 50px 0 0;
+}
+.impact h1 {
+    font-size: 2.5em;
+    color: #165199;
+}
+.impact:hover {
+    transform: scale(1.05);
+}
+.content img {
+    height: 400px;
+    width: 400px;
+}
+.content img:hover {
+    transform: scale(1.1);
+}
+/* fim content */
+/* footer */
+.footer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    background-color: #165199;
+    color: #eeecea;
+    padding: 30px;
+    
+}
