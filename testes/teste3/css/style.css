@@ -12,5 +12,9 @@ body {
 #container {
     background-color:#eeecea;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+}
+h1 {
+    font-size: 2.6em;
+    color: #0a3680;
 }

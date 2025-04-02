@@ -19,7 +19,6 @@
 }
 .logo h1 {
     font-size: 1.3em;
-    color: #165199;
     margin: 10px 0 0 5px;
 }
 .logo img {
@@ -56,7 +55,7 @@
 .contact {
     width: 100px;
     height: 30px;
-    background-color: #165199;
+    background-color: #128C7E;
     border-radius: 0 10px 0 10px;
     display: flex;
     justify-content: center;
@@ -83,12 +82,14 @@
 /* content */
 .content {
     width: 100%;
+    min-width: 800px;
     height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     /* background-color: #165199; */
+    padding: 30px;
 }
 .impact {
     width: 400px;
@@ -96,7 +97,7 @@
     padding: 50px 50px 0 0;
 }
 .impact h1 {
-    font-size: 2.5em;
+    font-size: 2.6em;
     color: #165199;
 }
 .impact:hover {
@@ -106,20 +107,33 @@
     height: 400px;
     width: 400px;
 }
-.content img:hover {
-    transform: scale(1.1);
-}
 /* fim content */
 /* footer */
 .footer {
-    height: auto;
+    height: 150px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
     background-color: #165199;
     color: #eeecea;
     padding: 30px;
-    
+}
+.footer p {
+    font-size: 16px;
+    font-weight: 600;
+}
+.fa-solid fa-chevron-up fa-beat-fade {
+    color: #eeecea;
+}
+.icon:hover {
+    color: #eeecea;
+    transform: scale(1.5);
+}
+.icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    rotate: 180deg;
 }
