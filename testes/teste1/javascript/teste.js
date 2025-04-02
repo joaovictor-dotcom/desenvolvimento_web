@@ -27,14 +27,40 @@
 // } else {
 //     console.log('Reprovado')
 // }
-var number = prompt('escolha um número:')
+// var number = prompt('escolha um número:')
 
-switch ( number ) {
-    case number <= 10 && number >= 5:
-        alert('seu número é algo entre 5 e 10')
-        break;
+// switch ( number ) {
+//     case number <= 10 && number >= 5:
+//         alert('seu número é algo entre 5 e 10')
+//         break;
 
-    default:
-        alert('não sei qual é o seu número')
-        break;
+//     default:
+//         alert('não sei qual é o seu número')
+//         break;
+// }
+
+// function calcularPares(num) {
+//     if ((num % 2) == 0) {
+//         console.log('O número é par')
+//     } else {
+//         console.log('O número é impar')
+//     }
+// }
+// var num = prompt('Escolha um número: ')
+
+// var resultado = calcularPares(num)
+// console.log(resultado)
+
+var calcularPares = function(number){
+    number = 2
+    if (( number % 2 ) == 0) {
+        number = 'Par'
+    } else {
+        number = 'Impar'
+    }
+    return number
 }
+
+console.log(calcularPares())
+
+
