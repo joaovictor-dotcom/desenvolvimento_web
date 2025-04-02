@@ -18,3 +18,6 @@ h1 {
     font-size: 2.6em;
     color: #0a3680;
 }
+html {
+    scroll-behavior: smooth;
+}

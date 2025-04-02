@@ -51,16 +51,16 @@
 // var resultado = calcularPares(num)
 // console.log(resultado)
 
-var calcularPares = function(number){
-    number = 2
-    if (( number % 2 ) == 0) {
-        number = 'Par'
-    } else {
-        number = 'Impar'
-    }
-    return number
-}
+// var calcularPares = function(number){
+//     number = 9
+//     if (( number % 2 ) == 0) {
+//         number = 'Par'
+//     } else {
+//         number = 'Impar'
+//     }
+//     return number
+// }
 
-console.log(calcularPares())
+// console.log(calcularPares(number))
 
 

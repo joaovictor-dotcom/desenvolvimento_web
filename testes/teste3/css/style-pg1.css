@@ -1,13 +1,17 @@
 /* header */
 .header {
     width: 100%;
-    height: 70px;
+    height: 90px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     min-width: 600px;
     padding-top: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #eeecea;
 }
 /* logo */
 .logo {
