@@ -63,4 +63,6 @@
 
 // console.log(calcularPares(number))
 
+// var nome = 'joão'
 
+// typeof nome
