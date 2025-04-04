@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/stylePg1.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <div id="container">
@@ -29,6 +36,9 @@
             src="imagens/Isadora Soares Massoterapia (Logo Sem Fundo).png"
             alt=""
           />
+        </div>
+        <div id="button">
+          <button><i id="mobileButton" class="fa-solid fa-bars"></i></button>
         </div>
         <div id="menu">
           <ul>
@@ -46,15 +56,36 @@
             </li>
           </ul>
         </div>
+        <div id="mobileMenu">
+          <ul>
+            <li>
+              <a href="">Início</a>
+            </li>
+            <li>
+              <a href="#experiencia">A Experiência</a>
+            </li>
+            <li>
+              <a href="">Serviços</a>
+            </li>
+            <li>
+              <a href="">Diferencial</a>
+            </li>
+          </ul>
+          <a href="" id="mobileCta" class="cta">Agende agora!</a>
+        </div>
         <div id="contato">
-          <a href="" class="cta">Agende agora!</a>
+          <a href="" id="desktopCta" class="cta">Agende agora!</a>
         </div>
       </div>
 
       <div id="hero">
         <div id="headline">
-          <h1 class="revealIn">Transforme o toque em cura e o bem-estar em prioridade.</h1>
-          <h2 class="revealIn">O equilíbrio do seu corpo reflete no seu sucesso.</h2>
+          <h1 class="revealIn">
+            Transforme o toque em cura e o bem-estar em prioridade.
+          </h1>
+          <h2 class="revealIn">
+            O equilíbrio do seu corpo reflete no seu sucesso.
+          </h2>
         </div>
         <div id="beneficios">
           <ul>
@@ -112,6 +143,10 @@
 
     <!-- meu JavaScript -->
     <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4e6008b98e.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -17,3 +17,10 @@ sr.reveal('.revealIn', {
     rotate: {x: 0, y: 80, z: 0},
     delay: 200
 })
+
+// jQuery
+$(document).ready(function(){
+    $('.fa-bars').on('click', function() {
+        $('#mobileMenu').toggleClass('active')
+    })
+})
