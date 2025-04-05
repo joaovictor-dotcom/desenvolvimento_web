@@ -64,3 +64,45 @@ span {
     color: #eeecea;
     background-color: #0a3680;
 }
+
+/* responsividade */
+@media (max-width: 768px) {
+    #pg4 {
+        height: 1000px;
+    }
+    .oferta {
+        padding: 0 30px;
+        height: 400px;
+    }
+    .oferta h1 {
+        margin-bottom: 30px;
+    }
+    .lateralizacao {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        height: 100%;
+        text-align: center;
+    }
+    .primeirosOferta {
+        width: 100%;
+        height: 300px;
+    }
+    .primeirosOferta h2 {
+        margin-bottom: 10px;
+    }
+    .seuProjeto {
+        width: 100%;
+        height: 400px;
+        margin-top: 40px ;
+    }
+    .seuProjeto a {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .seuProjeto img {
+        width: 200px;
+        height: 200px;
+    }
+}
