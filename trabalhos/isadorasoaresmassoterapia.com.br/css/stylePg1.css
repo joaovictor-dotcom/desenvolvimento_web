@@ -325,8 +325,8 @@ ul li::marker {
   background-size: 180%;
   background-position: center;
   border-radius: 10px;
-  flex-grow: 1;
-  flex-basis: 200;
+  /* flex-grow: 1;
+  flex-basis: 200; */
   padding: 30px 20px;
 }
 #servicosLista > div:hover {
@@ -351,40 +351,84 @@ ul li::marker {
 .fa-spa {
   font-size: 40px;
 }
-/* responsividade */
-@media screen and (max-width: 1000px){
-  #servicos {
-    height: 800px;
-    background-attachment: scroll;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  #servicos h1 {
-    font-size: 2.5em;
-    margin: 50px 0 10px 0;
-  }
-  #servicos h2 {
-    font-size: 1.3em;
-    margin-bottom: 70px;
-  }
-  #servicosLista {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  #servicosLista > div {
-    margin: 20px 0;
-    height: 100%;
-    width: 100%;
-  }
-  #botaoServicos {
-    display: none;
-  }
+#sliderNav {
+  display: none;
 }
-/* fim responsividade */
+/* ChatGPT */
+/* =========================
+   Versão Mobile: Slider de Serviços
+   ========================= */
+   @media screen and (max-width: 768px) {
+    /* Esconde o layout original de "servicosLista" (com flex-wrap) e adapta para slider */
+    #servicosLista {
+      display: flex;
+      overflow: hidden;
+      flex-wrap: nowrap;
+      scroll-snap-type: x mandatory;
+      width: 100%;
+      /* Removendo a altura fixa para que se ajuste ao conteúdo */
+      height: auto;
+    }
+    
+    /* Cada cartão agora ocupa 100% da largura disponível */
+    #servicosLista > .servico {
+      flex: 0 0 100%;
+      scroll-snap-align: center;
+      /* Ajusta o padding se necessário para mobile */
+      padding: 20px 15px;
+    }
+    
+    /* Oculta o layout de grid original, se existir regras específicas para desktop */
+    /* Exemplo: se tiver .servicos-grid, assegure que ele esteja display: none; */
+    
+    /* Botões de navegação – visíveis somente no mobile */
+    #sliderNav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    
+    .slider-btn {
+      background-color: #85ceab;
+      border: none;
+      padding: 0.8rem 1rem;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: background 0.3s ease;
+    }
+    
+    .slider-btn:hover {
+      background-color: #6fb292;
+    }
+    
+    /* Indicadores (bolinhas) */
+    #sliderIndicators {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    
+    #sliderIndicators div {
+      width: 10px;
+      height: 10px;
+      background-color: #c7b5a6;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    #sliderIndicators .active {
+      background-color: #744926;
+    }
+  }
+  
+/* fim ChatGPT */
+
 /* fim serviços */
 
 /* diferencial */
